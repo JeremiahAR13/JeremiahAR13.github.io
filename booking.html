@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Voyage Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Voyage Ventures </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#destinations">Destinations</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <section class="booking-options">
+        <br>
+        <h2>Book Your Next Adventure</h2>
+        <form action="#" method="POST" class="booking-form">
+            <br>
+            <label for="destination">Select Destination:</label>
+            <select id="destination" name="destination">
+                <option value="bali">Bali</option>
+                <option value="kerala">Kerala</option>
+                <option value="phuket">Phuket</option>
+                <option value="taj-mahal">Taj Mahal</option>
+            </select>
+
+            <label for="travel-dates">Travel Dates:</label>
+            <input type="date" id="travel-dates" name="travel-dates" required>
+
+            <label for="travelers">Number of Travelers:</label>
+            <input type="number" id="travelers" name="travelers" min="1" required>
+
+            <label for="accommodation">Accommodation Preference:</label>
+            <select id="accommodation" name="accommodation">
+                <option value="budget">Budget</option>
+                <option value="standard">Standard</option>
+                <option value="luxury">Luxury</option>
+            </select>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+  
+    <footer>
+        <p>&copy; 2024 Voyage Ventures. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

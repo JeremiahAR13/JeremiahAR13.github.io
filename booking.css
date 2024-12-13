@@ -1,0 +1,52 @@
+
+.book-now-button {
+    padding: 10px 20px;
+    background-color: #ca1b18;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.book-now-button:hover {
+    background-color: #c31212;
+}
+
+
+.booking-options {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.booking-form label {
+    font-weight: bold;
+}
+
+.booking-form input, .booking-form select, .booking-form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #cd1515;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #db1212;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Voyage Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="logo">Voyage Ventures</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#destinations">Destinations</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="payment-details">
+        <h1>Confirm Your Booking</h1>
+        <div class="booking-summary">
+            <h2>Booking Summary</h2>
+            <p><strong>Hotel:</strong> <span id="hotel-name"></span></p>
+            <p><strong>Number of People:</strong> <span id="number-of-people"></span></p>
+            <p><strong>Budget:</strong> <span id="budget"></span></p>
+            <p><strong>Number of Days:</strong> <span id="days"></span></p>
+            <p><strong>Preferred Area:</strong> <span id="preferred-area"></span></p>
+        </div>
+
+       
+        <form action="confirmation.html" method="POST" class="payment-form">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required placeholder="XXXX-XXXX-XXXX-XXXX">
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="month" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required placeholder="XXX">
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Voyage Ventures. All Rights Reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

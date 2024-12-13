@@ -1,0 +1,49 @@
+
+.hotel-description {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hotel-description p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+
+.hotel-booking {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.booking-form label {
+    font-weight: bold;
+}
+
+.booking-form input, .booking-form select, .booking-form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #d32f2f;
+}

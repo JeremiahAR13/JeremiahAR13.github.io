@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: font-family: serif;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #121111;
+    color: #06b0e8;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+#home {
+  position: relative;
+  height: 100vh; 
+  color: #fff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; 
+}
+
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
+  animation: slideshow 12s infinite; 
+}
+
+
+@keyframes slideshow {
+  0% {
+      background-image: url('TAJmahal.jpg');
+  }
+  33% {
+      background-image: url('Kerala2.jpg');
+  }
+  66% {
+      background-image: url('phukhet.jpg');
+  }
+  100% {
+      background-image: url('Bali1.jpg'); 
+  }
+}
+
+
+.book-now-button {
+  display: inline-block; 
+  padding: 15px 30px; 
+  background-color: #f44336; 
+  color: #fff; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 1.2em; 
+  font-weight: bold; 
+  border-radius: 5px; 
+  border: 2px solid #f44336; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now-button:hover {
+  background-color: #d32f2f; 
+  transform: scale(1.05); 
+  border-color: #d32f2f;
+}
+
+
+
+
+
+#about, #packages, #offers, #blog, #contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about p, #packages p, #offers p, #blog p, #contact p {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.destinations {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f6eded;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+.card {
+  text-decoration: none; /
+  color: inherit; 
+}
+
+
+.card p {
+  font-style: oblique; 
+  
+}
+
+
+
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 1rem 1rem 0.5rem;
+}
+
+.card p {
+  margin: 0.5rem 1rem 1rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  background: #e9e8e8;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+h1 {
+  text-align: center;
+  color: #f20505;
+  margin-bottom: 20px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+label {
+  font-weight: bold;
+  color: #000000;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dbd3d3;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+button {
+  background-color: #d41515;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b26b47;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

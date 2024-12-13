@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort - Voyage Ventures</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Voyage Ventures</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hotel-description">
+        <h1>Find the Perfect Resorts</h1>
+        <p>Explore a wide range of apartments to suit your preferences and budget. Whether you’re looking for a peaceful retreat or a lively tourist hub, we have options for everyone.</p>
+    </section>
+
+    
+    <section class="hotel-booking">
+        <h2>Book Your Stay</h2>
+        <form action="payment.html" method="GET" class="booking-form">
+           
+            <label for="hotel">Choose the Resort:</label>
+            <select id="hotel" name="hotel" required>
+                <option value="seaside-hotel">Seaside Hotel</option>
+                <option value="city-central-hotel">City Central Hotel</option>
+                <option value="mountain-retreat">Mountain Retreat</option>
+            </select>
+        
+          
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" max="20" required>
+        
+           
+            <label for="budget">Budget (per night in USD):</label>
+            <input type="number" id="budget" name="budget" min="50" required>
+        
+          
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" min="1" required>
+        
+            
+            <label for="area">Preferred Area:</label>
+            <select id="area" name="area" required>
+                <option value="tourist-location">Tourist Location</option>
+                <option value="calm-area">Calm Area</option>
+            </select>
+        
+            <button type="submit">Submit Booking</button>
+        </form>
+        
+    </section>
+
+  
+    <footer>
+        <p>&copy; 2024 Voyage Ventures. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
