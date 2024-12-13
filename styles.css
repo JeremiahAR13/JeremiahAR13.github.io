@@ -248,3 +248,80 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+
+
+
+
+footer {
+  background-color: #000000;
+  color: rgb(231, 10, 10);
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #b49f9f;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: rgb(195, 175, 175);
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.footer-column ul li a:hover {
+  color: #ff4500;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95em;
+}
+
+.footer-column form button {
+  background-color: #ff4500;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-column form button:hover {
+  background-color: #e63900;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
